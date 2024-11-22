@@ -1,10 +1,10 @@
 # Weather-API
 
-Integrated Environmental Monitoring System
-Description
+# Integrated Environmental Monitoring System
+# Description
 This project implements an integrated environmental monitoring system in C. It interacts with a free API to retrieve real-time environmental data, processes it, and stores both raw and processed data in files. The system is designed to automate data retrieval and processing tasks using shell scripts, while also implementing real-time alerts for critical environmental conditions (e.g., high temperature and humidity).The project leverages contemporary computer engineering technologies, including dynamic memory allocation, modular programming, and Linux system calls, to optimize the system's efficiency and functionality.
 
-Problem Definition
+# Problem Definition
 The goal is to create a system that:
 1)Retrieves real-time environmental data such as temperature and humidity from a weather API.
 2)Processes and stores raw and processed data in files.
@@ -19,48 +19,48 @@ Features
 10)Shell scripts: Automate data retrieval and processing tasks.
 11)Modular code: Use header files and dynamic memory allocation to enhance code readability and efficiency.
 
-Technologies Used:
+# Technologies Used:
 1)Programming Language: C
 2)Libraries:
 3)libcurl: For retrieving data from the weather API.
 4)cJSON: For parsing the API response in JSON format.
 
-Tools:
+# Tools:
 1)Ubuntu (Linux) system
 2)Shell scripting for automation
 3)GCC for compiling C code
 
-Installation Instructions
+# Installation Instructions
 
-1)Clone the repository:
+# 1)Clone the repository:
 git clone https://github.com/ZaraAkramBaig/Weather-API
 
-Install dependencies:
+# Install dependencies:
 2)Install libcurl and cJSON:
 sudo apt-get update
 sudo apt-get install libcurl4-openssl-dev libjson-c-dev
 
-3)Compile the project:
+# 3)Compile the project:
 gcc main.c api_interaction.c alert.c -o weather_update -lcurl -lcjson
 
-4)Run the program:
+# 4)Run the program:
 ./weather_update
 There are subdirectories in the code file intergrated_enviromental_monitoring_system named as data "data" in which processed_sensor_data.txt and weather_data.txt files are present .The program will retrieve data from api, then and save raw data in "weather_data.txt" file and process it which is save on "processed_sensor_data.txt" . There is another subdirectory  named as "logs" and all the alerts are being saved in "alerts.log" file inside it.
 
-Usage Instructions
+# Usage Instructions
 1)After compiling the code, run the executable. 
 2)It will retrieve the current weather data from the WeatherAPI, process the data (temperature and humidity), and store it in a file called processed_sensor_data.txt.
 3)If critical conditions are detected (e.g., temperature > 30°C or humidity > 80%), an alert will be triggered and displayed.
-Example
+# Example
 Weather data saved to weather_data.txt.
 Processed data saved to processed_sensor_data.txt.
 Alert: Critical environmental condition detected! (Temperature: 32.5, Humidity: 85.0)
 
-Shell Scripts:
+# Shell Scripts:
 1)The run_system.sh script automates the process of retrieving weather data and running the C program periodically.
 2)To use it, simply modify the script with the desired city and schedule it in your system’s cron job.
  
-File Structure:
+# File Structure:
 /integrated_environmental_monitoring_system
  |data (subdirectory)
 ├── api_interaction.c                             # Handles API interaction and data processing
@@ -73,26 +73,28 @@ File Structure:
 ├── processed_sensor_data.txt                     # Stores processed sensor data
 └── run_system.sh                                 # Shell script to automate data retrieval
 
-Contributing:
+# Contributing:
 Feel free to fork this repository, make improvements, and submit pull requests. Please ensure that your code adheres to the coding standards outlined in the project.
 
-License:
+# License:
 This project is a semester project for the Computer and Information Systems Engineering department at NED University. It is for educational purposes only and is not intended for commercial use. All rights are reserved.
 If you wish to use or modify this project for any purpose, please contact the authors or obtain permission from the relevant academic authorities.
 
-Authors/Contributors:
+# Authors/Contributors:
 1)Zara Akram Baig
 2)Areeba Khan
 3)Javeria Rizwan
 
-Acknowledgments:
+# Acknowledgments:
 Thanks to WeatherAPI for providing the weather data API.
 Special thanks to all contributors who helped develop this project.
 
-Known Issues or Limitations:
+# Known Issues or Limitations:
 The current implementation only handles temperature and humidity data. Additional environmental factors could be added in the future.
 
-Contact Information:
+# Contact Information:
 For any questions or suggestions, please contact javeriar893@gmail.com.
+zaraakrambaig@gmail.com
+reebkhan004@gmail.com
 
 
