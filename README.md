@@ -1,3 +1,5 @@
+# Weather-API
+
 Integrated Environmental Monitoring System
 Description
 This project implements an integrated environmental monitoring system in C. It interacts with a free API to retrieve real-time environmental data, processes it, and stores both raw and processed data in files. The system is designed to automate data retrieval and processing tasks using shell scripts, while also implementing real-time alerts for critical environmental conditions (e.g., high temperature and humidity).The project leverages contemporary computer engineering technologies, including dynamic memory allocation, modular programming, and Linux system calls, to optimize the system's efficiency and functionality.
@@ -94,5 +96,3 @@ Contact Information:
 For any questions or suggestions, please contact javeriar893@gmail.com.
 
 
-
-# Weather-API
