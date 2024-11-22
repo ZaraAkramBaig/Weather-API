@@ -35,17 +35,17 @@ Features
 # 1)Clone the repository:
 git clone https://github.com/ZaraAkramBaig/Weather-API
 
-# Install dependencies:
-2)Install libcurl and cJSON:
-sudo apt-get update
-sudo apt-get install libcurl4-openssl-dev libjson-c-dev
+# 2)Install dependencies:
+1)Install libcurl and cJSON use comamand: "sudo apt-get update"
+2)sudo apt-get install libcurl4-openssl-dev libjson-c-dev
 
 # 3)Compile the project:
 gcc main.c api_interaction.c alert.c -o weather_update -lcurl -lcjson
 
 # 4)Run the program:
-./weather_update
-There are subdirectories in the code file intergrated_enviromental_monitoring_system named as data "data" in which processed_sensor_data.txt and weather_data.txt files are present .The program will retrieve data from api, then and save raw data in "weather_data.txt" file and process it which is save on "processed_sensor_data.txt" . There is another subdirectory  named as "logs" and all the alerts are being saved in "alerts.log" file inside it.
+Run the program by using "./weather_update" and also "./run_system.sh".
+# Explanation:
+There are subdirectories in the code file intergrated_enviromental_monitoring_system named as data "data" in which processed_sensor_data.txt and weather_data.txt files are present .The program will retrieve data from api, then and save raw data in "weather_data.txt" file and process it which is save on "processed_sensor_data.txt" . There is another subdirectory  named as "logs" and all the alerts are being saved in "alerts.log" file inside it.Press Ctrl+ C to come command line again.
 
 # Usage Instructions
 1)After compiling the code, run the executable. 
